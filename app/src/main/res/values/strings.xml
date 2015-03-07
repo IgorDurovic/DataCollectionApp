@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DataCollectionApp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_secondary">SecondaryActivity</string>
+    <color name="teal">#ff86fcff</color>
+    <color name="black">#000000</color>
+    <color name="light">#ffc2d7ff</color>
+    <string name="title_activity_status">Status</string>
+    <string name="title_activity_gender">Gender</string>
+    <string name="title_activity_age">Age</string>
+</resources>

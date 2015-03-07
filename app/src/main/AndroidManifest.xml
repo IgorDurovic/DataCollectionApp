@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sciencefair.igordurovic.datacollectionapp" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainInfoActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SecondaryActivity"
+            android:label="@string/title_activity_secondary"
+            android:parentActivityName=".MainInfoActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sciencefair.igordurovic.datacollectionapp.MainInfoActivity" />
+        </activity>
+        <activity
+            android:name=".Status"
+            android:label="@string/title_activity_status"
+            android:parentActivityName=".MainInfoActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sciencefair.igordurovic.datacollectionapp.MainInfoActivity" />
+        </activity>
+        <activity
+            android:name=".Gender"
+            android:label="@string/title_activity_gender"
+            android:parentActivityName=".MainInfoActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sciencefair.igordurovic.datacollectionapp.MainInfoActivity" />
+        </activity>
+        <activity
+            android:name=".Age"
+            android:label="@string/title_activity_age"
+            android:parentActivityName=".MainInfoActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sciencefair.igordurovic.datacollectionapp.MainInfoActivity" />
+        </activity>
+    </application>
+
+</manifest>
