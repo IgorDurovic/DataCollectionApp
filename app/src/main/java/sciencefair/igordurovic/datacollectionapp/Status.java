@@ -1,5 +1,6 @@
 package sciencefair.igordurovic.datacollectionapp;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -43,6 +44,8 @@ public class Status extends ActionBarActivity {
                     editor.commit();
                 }
                 else if(options == 3){
+                    Intent i = new Intent(getApplicationContext(), InfectPeriod.class);
+                    startActivity(i);
                     String status = "Immune";
                     SharedPreferences examplePrefs = getSharedPreferences(PREFS, 0);
                     SharedPreferences.Editor editor = examplePrefs.edit();
@@ -108,9 +111,17 @@ public class Status extends ActionBarActivity {
                     options = 2;
                 break;
             case R.id.radioButton3:
-                if(checked)
+                if (checked)
                     options = 3;
                 break;
         }
     }
+
+//    public void onSaveClick(View view){
+//
+//        if(options == 3){
+//            Intent i = new Intent(getApplicationContext(), InfectPeriod.class);
+//            startActivity(i);
+//        }
+//    }
 }
