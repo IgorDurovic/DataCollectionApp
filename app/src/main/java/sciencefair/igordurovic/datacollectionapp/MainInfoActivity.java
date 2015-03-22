@@ -3,6 +3,7 @@ package sciencefair.igordurovic.datacollectionapp;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.support.v4.util.Pair;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -12,6 +13,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
+
+
+import java.util.Date;
 
 
 public class MainInfoActivity extends ActionBarActivity {
@@ -24,6 +28,13 @@ public class MainInfoActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_info);
+
+       /* Entity person = new Entity("Person");
+        person.setProperty("Age", 16);
+        person.setProperty("Gender", "male");
+        person.setProperty("InfectiousPeriod", 5);
+        person.setProperty("Status", "immune");
+        datastore.put(person)*/;
 
         /*final EditText et = (EditText)findViewById(R.id.EditText);
         Button nextAct = (Button)findViewById(R.id.button);
